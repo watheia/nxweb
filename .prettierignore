@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+/node_modules
+/public
+/.yarn
+/.docusaurus/
+/apps/www/node_modules
+/apps/www/public
+/apps/www/.cache
+/apps/gatsby-theme-watheia/node_modules
+/apps/gatsby-theme-watheia/public
+/apps/gatsby-theme-watheia/.cache

@@ -1,0 +1,46 @@
+{
+  "npmScope": "nxweb",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "N2VmYWRkNDgtNWFjOC00MjVjLTg2YTItY2MzNzgyZDFjYzZmfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "www": {
+      "tags": []
+    },
+    "www-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "www"
+      ]
+    }
+  }
+}
