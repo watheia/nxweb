@@ -1,0 +1,8 @@
+- name: AutoDevOps.com
+  description: Platform as a Service (PaaS) micro product under active development
+  role: Owner, Project Manager
+
+- name: Spectrum Blog
+  href: https://watheia.org
+  description: Hand crafted blog flexing humanistic design might
+  role:

@@ -66,3 +66,7 @@ prisma/dev.db*
 /apps/www/node_modules
 /apps/www/public
 /apps/www/.cache
+
+/apps/gatsby-theme-minimal/node_modules
+/apps/gatsby-theme-minimal/public
+/apps/gatsby-theme-minimal/.cache

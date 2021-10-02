@@ -1,0 +1,14 @@
+---
+description: "A React Hook that increments a count by 1 each time it is called."
+labels: ["hook", "counter"]
+---
+
+import { useLocalStorage } from "./use-local-storage"
+
+A React Hook to store arbitrary data in local storage. Accepts any serializable value.
+
+### Usage
+
+```js
+const { value, setValue } = useLocalStorage("key", { value: 42 })
+```

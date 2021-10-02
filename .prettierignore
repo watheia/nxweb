@@ -9,6 +9,7 @@
 /apps/www/node_modules
 /apps/www/public
 /apps/www/.cache
-/apps/gatsby-theme-watheia/node_modules
-/apps/gatsby-theme-watheia/public
-/apps/gatsby-theme-watheia/.cache
+
+/apps/gatsby-theme-minimal/node_modules
+/apps/gatsby-theme-minimal/public
+/apps/gatsby-theme-minimal/.cache

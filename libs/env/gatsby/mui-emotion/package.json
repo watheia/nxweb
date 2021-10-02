@@ -1,0 +1,8 @@
+{
+  "name": "@watheia/env.gatsby.mui-emotion",
+  "version": "0.0.1",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": "*"
+  }
+}
