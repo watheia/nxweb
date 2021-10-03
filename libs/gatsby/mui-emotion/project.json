@@ -1,0 +1,52 @@
+{
+  "root": "libs/gatsby/mui-emotion",
+  "sourceRoot": "libs/gatsby/mui-emotion/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:package",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/gatsby/mui-emotion",
+        "tsConfig": "libs/gatsby/mui-emotion/tsconfig.lib.json",
+        "project": "libs/gatsby/mui-emotion/package.json",
+        "entryFile": "libs/gatsby/mui-emotion/index.js",
+        "external": [
+          "react/jsx-runtime"
+        ],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "assets": [
+          {
+            "glob": "libs/gatsby/mui-emotion/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/gatsby/mui-emotion/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/gatsby/mui-emotion"
+      ],
+      "options": {
+        "jestConfig": "libs/gatsby/mui-emotion/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

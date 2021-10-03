@@ -15,17 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@watheia/atoms.link": ["libs/atoms/link/src/index.ts"],
+      "@watheia/atoms": ["libs/atoms/src/index.ts"],
       "@watheia/catalog": ["libs/catalog/src/index.ts"],
-      "@watheia/env.gatsby.mui-emotion": ["libs/env/gatsby/mui-emotion/index.js"],
-      "@watheia/env.gatsby.site-schema": ["libs/env/gatsby/site-schema/index.js"],
-      "@watheia/env.gatsby.top-layout": ["libs/env/gatsby/top-layout/index.js"],
-      "@watheia/hooks.use-dark-mode": ["libs/ui/hooks/use-dark-mode/src/index.ts"],
-      "@watheia/hooks.use-local-storage": ["libs/ui/hooks/use-local-storage/src/index.ts"],
-      "@watheia/hooks.use-media": ["libs/ui/hooks/use-media/src/index.ts"],
-      "@watheia/theme.palette": ["libs/theme/palette/src/index.ts"],
-      "@watheia/theme.provider": ["libs/theme/provider/src/index.ts"],
-      "@watheia/theme.styles.global/*": ["libs/theme/styles/global/src/*"],
+      "@watheia/gatsby.mui-emotion": ["libs/gatsby/mui-emotion/index.js"],
+      "@watheia/gatsby.site-schema": ["libs/gatsby/site-schema/index.js"],
+      "@watheia/gatsby.top-layout": ["libs/gatsby/top-layout/index.js"],
+      "@watheia/hooks": ["libs/hooks/use-media/src/index.ts"],
+      "@watheia/theme": ["libs/theme/src/index.ts"],
       "@watheia/utils": ["libs/utils/src/index.ts"]
     }
   },

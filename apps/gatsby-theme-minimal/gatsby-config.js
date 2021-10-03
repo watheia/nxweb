@@ -40,7 +40,7 @@ module.exports = {
       }
     },
     {
-      resolve: require.resolve("../../libs/env/gatsby/site-schema"),
+      resolve: require.resolve("../../libs/gatsby/site-schema"),
       options: {
         assetsPath: `${__dirname}/content/data`
       }
