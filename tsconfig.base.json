@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@watheia/atoms.link": ["libs/atoms/link/src/index.ts"],
       "@watheia/catalog": ["libs/catalog/src/index.ts"],
       "@watheia/env.gatsby.mui-emotion": ["libs/env/gatsby/mui-emotion/index.js"],
       "@watheia/env.gatsby.site-schema": ["libs/env/gatsby/site-schema/index.js"],

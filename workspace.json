@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "atoms-link": "libs/atoms/link",
     "catalog": "libs/catalog",
     "env-gatsby-mui-emotion": "libs/env/gatsby/mui-emotion",
     "env-gatsby-site-schema": "libs/env/gatsby/site-schema",
