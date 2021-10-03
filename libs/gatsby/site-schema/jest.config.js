@@ -1,10 +1,10 @@
 module.exports = {
   displayName: "env-gatsby-site-schema",
-  preset: "../../jest.preset.js",
+  preset: "../../../jest.preset.js",
   testEnvironment: "node",
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest"
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  coverageDirectory: "../../coverage/libs/gatsby/site-schema"
+  coverageDirectory: "../../../coverage/libs/gatsby/site-schema"
 }
