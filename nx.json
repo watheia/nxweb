@@ -8,18 +8,14 @@
       "dependencies": "*",
       "devDependencies": "*"
     },
-    ".eslintrc.json": "*"
+    ".eslintrc.json": "*",
+    ".stylelintrc.json": "*"
   },
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
         "accessToken": "N2VmYWRkNDgtNWFjOC00MjVjLTg2YTItY2MzNzgyZDFjYzZmfHJlYWQtd3JpdGU="
       }
     }
@@ -34,13 +30,12 @@
   },
   "projects": {
     "www": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["gatsby-theme-minimal"]
     },
     "www-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "www"
-      ]
+      "implicitDependencies": ["www"]
     }
   }
 }

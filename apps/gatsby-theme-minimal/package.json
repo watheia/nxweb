@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and to develop quickly with Gatsby",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "gatsby-config.js",
+  "dependencies": {
+    "gatsby": "*",
+    "@watheia/env.gatsby.site-schema": "*"
+  }
+}

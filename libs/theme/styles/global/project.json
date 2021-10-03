@@ -1,0 +1,33 @@
+{
+  "root": "libs/theme/styles/global",
+  "sourceRoot": "libs/theme/styles/global/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/theme/styles/global",
+        "main": "libs/theme/styles/global/src/index.ts",
+        "tsConfig": "libs/theme/styles/global/tsconfig.lib.json",
+        "assets": ["libs/theme/styles/global/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/theme/styles/global/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/theme/styles/global"],
+      "options": {
+        "jestConfig": "libs/theme/styles/global/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -67,6 +67,7 @@ test: # This job runs in the test stage.
 lint: # This job also runs in the test stage.
   needs: [install]
   stage: test # It can run at the same time as unit-test-job (in parallel).
+  allow_failure: true
   script:
     - yarn nx run-many
       --target=lint
