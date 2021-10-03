@@ -3,6 +3,16 @@
   "sourceRoot": "libs/theme/styles/global/src",
   "projectType": "library",
   "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/theme/styles/global",
+        "main": "libs/theme/styles/global/src/index.ts",
+        "tsConfig": "libs/theme/styles/global/tsconfig.lib.json",
+        "assets": ["libs/theme/styles/global/*.md"]
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
