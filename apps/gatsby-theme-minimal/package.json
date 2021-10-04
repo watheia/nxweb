@@ -7,6 +7,6 @@
   "main": "gatsby-config.js",
   "dependencies": {
     "gatsby": "*",
-    "@watheia/env.gatsby.site-schema": "*"
+    "@watheia/gatsby.site-schema": "*"
   }
 }

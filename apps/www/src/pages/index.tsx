@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 
 import { ReactComponent as Logo } from "./logo.svg"
 import star from "./star.svg"
+import { Link } from "@watheia/atoms"
 
 const StyledApp = styled.div`
   font-family: sans-serif;
@@ -143,38 +144,38 @@ export function Index() {
     <StyledApp>
       <header className="flex">
         <Logo width="75" height="75" />
-        <h1>Welcome to www!</h1>
+        <h1>Welcome to nxweb!</h1>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx.</p>
         <div className="flex github-star-container">
-          <a href="https://github.com/nrwl/nx" target="_blank" rel="noopener noreferrer">
+          <Link to="https://github.com/nrwl/nx">
             {" "}
             If you like Nx, please give it a star:
             <div className="github-star-badge">
               <img src={star} className="material-icons" alt="" />
               Star
             </div>
-          </a>
+          </Link>
         </div>
         <p>Here are some links to help you get started.</p>
         <ul className="resources">
           <li className="col-span-2">
-            <a
+            <Link
               className="resource flex"
-              href="https://egghead.io/playlists/scale-react-development-with-nx-4038"
+              to="https://egghead.io/playlists/scale-react-development-with-nx-4038"
             >
               Scale React Development with Nx (Course)
-            </a>
+            </Link>
           </li>
           <li className="col-span-2">
-            <a
+            <Link
               className="resource flex"
-              href="https://nx.dev/latest/react/tutorial/01-create-application"
+              to="https://nx.dev/latest/react/tutorial/01-create-application"
             >
               Interactive tutorial
-            </a>
+            </Link>
           </li>
           <li className="col-span-2">
             <a className="resource flex" href="https://nx.app/">

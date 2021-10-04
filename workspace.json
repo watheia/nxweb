@@ -2,15 +2,13 @@
   "version": 2,
   "projects": {
     "catalog": "libs/catalog",
-    "env-gatsby-mui-emotion": "libs/env/gatsby/mui-emotion",
-    "env-gatsby-site-schema": "libs/env/gatsby/site-schema",
-    "env-gatsby-top-layout": "libs/env/gatsby/top-layout",
+    "env-gatsby-mui-emotion": "libs/gatsby/mui-emotion",
+    "env-gatsby-site-schema": "libs/gatsby/site-schema",
+    "env-gatsby-top-layout": "libs/gatsby/top-layout",
     "gatsby-theme-minimal": "apps/gatsby-theme-minimal",
-    "theme-provider": "libs/theme/provider",
-    "theme-styles-global": "libs/theme/styles/global",
-    "ui-hooks-use-dark-mode": "libs/ui/hooks/use-dark-mode",
-    "ui-hooks-use-local-storage": "libs/ui/hooks/use-local-storage",
-    "ui-hooks-use-media": "libs/ui/hooks/use-media",
+    "theme": "libs/theme",
+    "atoms": "libs/atoms",
+    "hooks": "libs/hooks",
     "utils": "libs/utils",
     "www": {
       "root": "apps/www",
@@ -42,14 +40,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/www/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/www/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/www"],
+          "outputs": [
+            "coverage/apps/www"
+          ],
           "options": {
             "jestConfig": "apps/www/jest.config.js",
             "passWithNoTests": true
@@ -77,9 +81,13 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/www-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/www-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
