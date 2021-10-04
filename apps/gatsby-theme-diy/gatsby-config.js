@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `gatsby-theme-minimal`,
@@ -16,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/static/images`
+        path: path.join(__dirname, "static", "images")
       }
     },
     `gatsby-transformer-sharp`,
@@ -36,14 +38,16 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/images/logo.svg`
+        icon: path.join(__dirname, "static", "images", "icon.png")
       }
     },
     {
-      resolve: require.resolve("../../libs/gatsby/site-schema"),
-      options: {
-        assetsPath: `${__dirname}/content/data`
-      }
+      resolve: require.resolve("../../libs/gatsby/mui-emotion"),
+      options: {}
+    },
+    {
+      resolve: require.resolve("../../libs/gatsby/top-layout"),
+      options: {}
     }
   ]
 }

@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-emotion",
     {
-      resolve: require.resolve("../gatsby-theme-minimal"),
+      resolve: require.resolve("../gatsby-theme-diy"),
       options: {
         contentPath: `${__dirname}/content/posts`,
         dataPath: `${__dirname}/content/data`

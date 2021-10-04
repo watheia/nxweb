@@ -1,0 +1,19 @@
+{
+  "root": "apps/gatsby-theme-diy",
+  "sourceRoot": "apps/gatsby-theme-diy/src",
+  "projectType": "application",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/gatsby-theme-diy/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

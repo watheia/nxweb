@@ -1,11 +1,11 @@
 {
-  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "extends": ["plugin:@nrwl/nx/react", "..\\..\\.eslintrc.json"],
   "ignorePatterns": ["!**/*", "public", ".cache"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": ["apps/gatsby-theme-minimal/tsconfig.*?.json"]
+        "project": ["apps/gatsby-theme-diy/tsconfig.*?.json"]
       },
       "rules": {}
     },

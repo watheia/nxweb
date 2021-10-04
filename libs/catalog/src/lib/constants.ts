@@ -17,7 +17,7 @@ export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_U
 export const TWITTER_USER_NAME = "watheia"
 export const BRAND_NAME = "Watheia"
 export const SITE_NAME_MULTILINE = ["Watheia", "Corporate"]
-export const SITE_NAME = "watheia-corporate"
+export const SITE_NAME = "watheia-labs"
 export const META_DESCRIPTION =
   "Watheia Labs LLC is a digital agency building products for the modern web."
 export const SITE_DESCRIPTION =
@@ -34,12 +34,13 @@ export const LOCALE = "en_US"
 export const LEGAL_URL = "/terms-and-conditions"
 export const COPYRIGHT_HOLDER = "Watheia Labs, LLC."
 
-export const REPO = "https://github.com/watheia/waweb"
+export const REPO = "https://github.com/watheia/nxweb"
 export const SEED_TICKET_NUMBER = 1234
 
-export const MISSION_STATEMENT = "Our mission is to create humanistic technology that's accesible to all."
+export const MISSION_STATEMENT =
+  "Our mission is to create more accesible and humanistic technology."
 
-export const DEFAULT_TITLE = "Watheia Corporate"
+export const DEFAULT_TITLE = "Watheia Labs"
 
 export const NAVIGATION = [
   {

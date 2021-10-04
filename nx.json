@@ -31,7 +31,7 @@
   "projects": {
     "www": {
       "tags": [],
-      "implicitDependencies": ["gatsby-theme-minimal"]
+      "implicitDependencies": ["gatsby-theme-diy"]
     },
     "www-e2e": {
       "tags": [],

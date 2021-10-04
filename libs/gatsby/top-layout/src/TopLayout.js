@@ -1,17 +1,10 @@
+import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { ThemeProvider } from "@watheia/theme"
-
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-
 import SEO from "./SEO"
-import { ReactNode } from "react"
 
-export type TopLayoutProps = {
-  children: ReactNode | ReactNode[]
-}
-
-export function TopLayout(props: TopLayoutProps) {
+export function TopLayout(props) {
   return (
     <>
       <Helmet>
