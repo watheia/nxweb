@@ -2,7 +2,15 @@
   "name": "@watheia/gatsby.mui-emotion",
   "version": "0.0.1",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "gatsby-browser.js",
+    "gatsby-node.js",
+    "gatsby-ssr.js",
+    "get-emotion-cache.js"
+  ],
   "peerDependencies": {
-    "gatsby": "*"
+    "@emotion/react": "^11.4.0",
+    "gatsby": "^3.0.0"
   }
 }

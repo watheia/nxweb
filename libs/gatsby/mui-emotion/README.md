@@ -1,7 +1,7 @@
-# env-gatsby-mui-emotion
+# gatsby-mui-emotion
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Running unit tests
 
-Run `nx test env-gatsby-mui-emotion` to execute the unit tests via [Jest](https://jestjs.io).
+Run `nx test gatsby-mui-emotion` to execute the unit tests via [Jest](https://jestjs.io).

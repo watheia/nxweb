@@ -17,7 +17,7 @@
     "paths": {
       "@watheia/atoms": ["libs/atoms/src/index.ts"],
       "@watheia/catalog": ["libs/catalog/src/index.ts"],
-      "@watheia/gatsby.mui-emotion": ["libs/gatsby/mui-emotion/index.js"],
+      "@watheia/gatsby.mui-emotion": ["libs/gatsby/mui-emotion/src/index.js"],
       "@watheia/gatsby.site-schema": ["libs/gatsby/site-schema/index.js"],
       "@watheia/gatsby.top-layout": ["libs/gatsby/top-layout/index.js"],
       "@watheia/hooks": ["libs/hooks/use-media/src/index.ts"],

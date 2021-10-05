@@ -3,9 +3,9 @@
   "projects": {
     "atoms": "libs/atoms",
     "catalog": "libs/catalog",
-    "env-gatsby-mui-emotion": "libs/gatsby/mui-emotion",
     "env-gatsby-top-layout": "libs/gatsby/top-layout",
-    "gatsby-theme-diy": "apps/gatsby-theme-diy",
+    "gatsby-mui-emotion": "libs/gatsby/mui-emotion",
+    "gatsby-theme-minimal": "apps/gatsby-theme-minimal",
     "hooks": "libs/hooks",
     "theme": "libs/theme",
     "utils": "libs/utils",

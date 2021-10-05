@@ -1,12 +1,10 @@
 {
   "presets": [
     [
-      "@nrwl/react/babel",
+      "babel-preset-gatsby-package",
       {
-        "runtime": "automatic",
-        "useBuiltIns": "usage"
+        "browser": true
       }
     ]
-  ],
-  "plugins": []
+  ]
 }

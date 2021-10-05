@@ -7,6 +7,7 @@
   "main": "gatsby-config.js",
   "dependencies": {
     "gatsby": "*",
-    "@watheia/gatsby.site-schema": "*"
+    "@watheia/gatsby.mui-emotion": "*",
+    "@watheia/gatsby.top-layout": "*"
   }
 }

@@ -211,7 +211,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/gatsby&#45;browser.js -->
 <g id="node2" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/gatsby&#45;browser.js</title>
-<g id="a_node2"><a xlink:href="apps/gatsby-theme-diy/gatsby-browser.js" xlink:title="no&#45;orphans">
+<g id="a_node2"><a xlink:href="apps/gatsby-theme-minimal/gatsby-browser.js" xlink:title="no&#45;orphans">
 <path fill="#ccffcc" stroke="orange" d="M673,-808C673,-808 595,-808 595,-808 592,-808 589,-805 589,-802 589,-802 589,-796 589,-796 589,-793 592,-790 595,-790 595,-790 673,-790 673,-790 676,-790 679,-793 679,-796 679,-796 679,-802 679,-802 679,-805 676,-808 673,-808"/>
 <text text-anchor="middle" x="634" y="-796.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="orange">gatsby&#45;browser.js</text>
 </a>
@@ -220,7 +220,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/gatsby&#45;config.js -->
 <g id="node3" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/gatsby&#45;config.js</title>
-<g id="a_node3"><a xlink:href="apps/gatsby-theme-diy/gatsby-config.js" xlink:title="gatsby&#45;config.js">
+<g id="a_node3"><a xlink:href="apps/gatsby-theme-minimal/gatsby-config.js" xlink:title="gatsby&#45;config.js">
 <path fill="#ffffcc" stroke="black" d="M668.5,-778C668.5,-778 599.5,-778 599.5,-778 596.5,-778 593.5,-775 593.5,-772 593.5,-772 593.5,-766 593.5,-766 593.5,-763 596.5,-760 599.5,-760 599.5,-760 668.5,-760 668.5,-760 671.5,-760 674.5,-763 674.5,-766 674.5,-766 674.5,-772 674.5,-772 674.5,-775 671.5,-778 668.5,-778"/>
 <text text-anchor="middle" x="634" y="-766.8" font-family="Helvetica,sans-Serif" font-size="9.00">gatsby&#45;config.js</text>
 </a>
@@ -241,7 +241,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/gatsby&#45;node.js -->
 <g id="node5" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/gatsby&#45;node.js</title>
-<g id="a_node5"><a xlink:href="apps/gatsby-theme-diy/gatsby-node.js" xlink:title="gatsby&#45;node.js">
+<g id="a_node5"><a xlink:href="apps/gatsby-theme-minimal/gatsby-node.js" xlink:title="gatsby&#45;node.js">
 <path fill="#ffffcc" stroke="black" d="M666.5,-838C666.5,-838 601.5,-838 601.5,-838 598.5,-838 595.5,-835 595.5,-832 595.5,-832 595.5,-826 595.5,-826 595.5,-823 598.5,-820 601.5,-820 601.5,-820 666.5,-820 666.5,-820 669.5,-820 672.5,-823 672.5,-826 672.5,-826 672.5,-832 672.5,-832 672.5,-835 669.5,-838 666.5,-838"/>
 <text text-anchor="middle" x="634" y="-826.8" font-family="Helvetica,sans-Serif" font-size="9.00">gatsby&#45;node.js</text>
 </a>
@@ -272,7 +272,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/gatsby&#45;ssr.js -->
 <g id="node7" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/gatsby&#45;ssr.js</title>
-<g id="a_node7"><a xlink:href="apps/gatsby-theme-diy/gatsby-ssr.js" xlink:title="no&#45;orphans">
+<g id="a_node7"><a xlink:href="apps/gatsby-theme-minimal/gatsby-ssr.js" xlink:title="no&#45;orphans">
 <path fill="#ccffcc" stroke="orange" d="M663,-718C663,-718 605,-718 605,-718 602,-718 599,-715 599,-712 599,-712 599,-706 599,-706 599,-703 602,-700 605,-700 605,-700 663,-700 663,-700 666,-700 669,-703 669,-706 669,-706 669,-712 669,-712 669,-715 666,-718 663,-718"/>
 <text text-anchor="middle" x="634" y="-706.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="orange">gatsby&#45;ssr.js</text>
 </a>
@@ -281,7 +281,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/postcss.config.js -->
 <g id="node8" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/postcss.config.js</title>
-<g id="a_node8"><a xlink:href="apps/gatsby-theme-diy/postcss.config.js" xlink:title="postcss.config.js">
+<g id="a_node8"><a xlink:href="apps/gatsby-theme-minimal/postcss.config.js" xlink:title="postcss.config.js">
 <path fill="#ffffcc" stroke="black" d="M671,-748C671,-748 597,-748 597,-748 594,-748 591,-745 591,-742 591,-742 591,-736 591,-736 591,-733 594,-730 597,-730 597,-730 671,-730 671,-730 674,-730 677,-733 677,-736 677,-736 677,-742 677,-742 677,-745 674,-748 671,-748"/>
 <text text-anchor="middle" x="634" y="-736.8" font-family="Helvetica,sans-Serif" font-size="9.00">postcss.config.js</text>
 </a>
@@ -296,7 +296,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/src/pages/404.js -->
 <g id="node9" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/src/pages/404.js</title>
-<g id="a_node9"><a xlink:href="apps/gatsby-theme-diy/src/pages/404.js" xlink:title="404.js">
+<g id="a_node9"><a xlink:href="apps/gatsby-theme-minimal/src/pages/404.js" xlink:title="404.js">
 <path fill="#ffffcc" stroke="black" d="M655,-610C655,-610 613,-610 613,-610 610,-610 607,-607 607,-604 607,-604 607,-598 607,-598 607,-595 610,-592 613,-592 613,-592 655,-592 655,-592 658,-592 661,-595 661,-598 661,-598 661,-604 661,-604 661,-607 658,-610 655,-610"/>
 <text text-anchor="middle" x="634" y="-598.8" font-family="Helvetica,sans-Serif" font-size="9.00">404.js</text>
 </a>
@@ -327,7 +327,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/src/pages/index.spec.tsx -->
 <g id="node11" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/src/pages/index.spec.tsx</title>
-<g id="a_node11"><a xlink:href="apps/gatsby-theme-diy/src/pages/index.spec.tsx" xlink:title="index.spec.tsx">
+<g id="a_node11"><a xlink:href="apps/gatsby-theme-minimal/src/pages/index.spec.tsx" xlink:title="index.spec.tsx">
 <path fill="#bbfeff" stroke="black" d="M665,-580C665,-580 603,-580 603,-580 600,-580 597,-577 597,-574 597,-574 597,-568 597,-568 597,-565 600,-562 603,-562 603,-562 665,-562 665,-562 668,-562 671,-565 671,-568 671,-568 671,-574 671,-574 671,-577 668,-580 665,-580"/>
 <text text-anchor="middle" x="634" y="-568.8" font-family="Helvetica,sans-Serif" font-size="9.00">index.spec.tsx</text>
 </a>
@@ -346,7 +346,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/src/pages/index.tsx -->
 <g id="node12" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/src/pages/index.tsx</title>
-<g id="a_node12"><a xlink:href="apps/gatsby-theme-diy/src/pages/index.tsx" xlink:title="index.tsx">
+<g id="a_node12"><a xlink:href="apps/gatsby-theme-minimal/src/pages/index.tsx" xlink:title="index.tsx">
 <path fill="#bbfeff" stroke="black" d="M811,-595C811,-595 769,-595 769,-595 766,-595 763,-592 763,-589 763,-589 763,-583 763,-583 763,-580 766,-577 769,-577 769,-577 811,-577 811,-577 814,-577 817,-580 817,-583 817,-583 817,-589 817,-589 817,-592 814,-595 811,-595"/>
 <text text-anchor="middle" x="790" y="-583.8" font-family="Helvetica,sans-Serif" font-size="9.00">index.tsx</text>
 </a>
@@ -393,7 +393,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/src/pages/logo.svg -->
 <g id="node14" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/src/pages/logo.svg</title>
-<g id="a_node14"><a xlink:href="apps/gatsby-theme-diy/src/pages/logo.svg" xlink:title="logo.svg">
+<g id="a_node14"><a xlink:href="apps/gatsby-theme-minimal/src/pages/logo.svg" xlink:title="logo.svg">
 <path fill="#ffffcc" stroke="black" d="M935,-610C935,-610 893,-610 893,-610 890,-610 887,-607 887,-604 887,-604 887,-598 887,-598 887,-595 890,-592 893,-592 893,-592 935,-592 935,-592 938,-592 941,-595 941,-598 941,-598 941,-604 941,-604 941,-607 938,-610 935,-610"/>
 <text text-anchor="middle" x="914" y="-598.8" font-family="Helvetica,sans-Serif" font-size="9.00">logo.svg</text>
 </a>
@@ -408,7 +408,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/src/pages/star.svg -->
 <g id="node15" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/src/pages/star.svg</title>
-<g id="a_node15"><a xlink:href="apps/gatsby-theme-diy/src/pages/star.svg" xlink:title="star.svg">
+<g id="a_node15"><a xlink:href="apps/gatsby-theme-minimal/src/pages/star.svg" xlink:title="star.svg">
 <path fill="#ffffcc" stroke="black" d="M935,-580C935,-580 893,-580 893,-580 890,-580 887,-577 887,-574 887,-574 887,-568 887,-568 887,-565 890,-562 893,-562 893,-562 935,-562 935,-562 938,-562 941,-565 941,-568 941,-568 941,-574 941,-574 941,-577 938,-580 935,-580"/>
 <text text-anchor="middle" x="914" y="-568.8" font-family="Helvetica,sans-Serif" font-size="9.00">star.svg</text>
 </a>
@@ -423,7 +423,7 @@
 <!-- apps/gatsby&#45;theme&#45;diy/tailwind.config.js -->
 <g id="node16" class="node">
 <title>apps/gatsby&#45;theme&#45;diy/tailwind.config.js</title>
-<g id="a_node16"><a xlink:href="apps/gatsby-theme-diy/tailwind.config.js" xlink:title="tailwind.config.js">
+<g id="a_node16"><a xlink:href="apps/gatsby-theme-minimal/tailwind.config.js" xlink:title="tailwind.config.js">
 <path fill="#ffffcc" stroke="black" d="M670.5,-688C670.5,-688 597.5,-688 597.5,-688 594.5,-688 591.5,-685 591.5,-682 591.5,-682 591.5,-676 591.5,-676 591.5,-673 594.5,-670 597.5,-670 597.5,-670 670.5,-670 670.5,-670 673.5,-670 676.5,-673 676.5,-676 676.5,-676 676.5,-682 676.5,-682 676.5,-685 673.5,-688 670.5,-688"/>
 <text text-anchor="middle" x="634" y="-676.8" font-family="Helvetica,sans-Serif" font-size="9.00">tailwind.config.js</text>
 </a>

@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: "env-gatsby-mui-emotion",
+  displayName: "gatsby-material-ui",
   preset: "../../../jest.preset.js",
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest"
