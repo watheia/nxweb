@@ -6,7 +6,6 @@
 
 // You can delete this file if you're not using it
 /* eslint-disable import/prefer-default-export */
-exports.onPreBootstrap = ({ store }) => {
-  const { program } = store.getState()
-  console.info("[top-layout]", program)
+exports.onPreBootstrap = () => {
+  console.log("[@watheia/gatsby.mui-emotion]")
 }

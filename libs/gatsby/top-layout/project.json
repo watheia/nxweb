@@ -6,17 +6,13 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:package",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/gatsby/top-layout",
         "tsConfig": "libs/gatsby/top-layout/tsconfig.lib.json",
         "project": "libs/gatsby/top-layout/package.json",
         "entryFile": "libs/gatsby/top-layout/index.js",
-        "external": [
-          "react/jsx-runtime"
-        ],
+        "external": ["react/jsx-runtime"],
         "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
         "assets": [
           {
@@ -29,20 +25,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/gatsby/top-layout/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["libs/gatsby/top-layout/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/gatsby/top-layout"
-      ],
+      "outputs": ["coverage/libs/gatsby/top-layout"],
       "options": {
         "jestConfig": "libs/gatsby/top-layout/jest.config.js",
         "passWithNoTests": true

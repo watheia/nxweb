@@ -7,5 +7,5 @@
 // You can delete this file if you're not using it
 
 exports.onPreBootstrap = ({ store }) => {
-  console.log("[top-layout] Init")
+  console.log("[@watheia/gatsby.top-layout]")
 }

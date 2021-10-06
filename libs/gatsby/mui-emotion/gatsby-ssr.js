@@ -3,7 +3,7 @@
 const { CacheProvider } = require("@emotion/react")
 const createEmotionServer = require("@emotion/server/create-instance")
 const { renderToString } = require("react-dom/server")
-const getEmotionCache = require("./src/getEmotionCache")
+const { getEmotionCache } = require("@watheia/utils")
 
 exports.replaceRenderer = ({ bodyComponent, setHeadComponents, replaceBodyHTMLString }) => {
   const cache = getEmotionCache()

@@ -7,14 +7,14 @@ import {
   PREVIEW_IMAGE_FALLBACK
 } from "@watheia/catalog"
 
-export interface SEOProps {
-  title?: string
-  url?: string
-  description?: string
-  image?: string
-}
+// export interface SEOProps {
+//   title?: string
+//   url?: string
+//   description?: string
+//   image?: string
+// }
 
-export const SEO = ({ title, url, description, image }: SEOProps): JSX.Element => {
+export const SEO = ({ title, url, description, image }) => {
   image = image ?? PREVIEW_IMAGE_FALLBACK
   title = title ?? SITE_NAME
   // TODO consider side-effect free hook

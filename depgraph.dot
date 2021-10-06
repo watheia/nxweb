@@ -5,10 +5,13 @@ strict digraph "dependency-cruiser output"{
 
     ".dependency-cruiser.js" [label=".dependency-cruiser.js" URL=".dependency-cruiser.js" fillcolor="#ccffcc"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/gatsby-browser.js" [label="gatsby-browser.js" tooltip="no-orphans" URL="apps/gatsby-theme-minimal/gatsby-browser.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
-    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/gatsby-config.js" [label="gatsby-config.js" tooltip="no-orphans" URL="apps/gatsby-theme-minimal/gatsby-config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/gatsby-config.js" [label="gatsby-config.js" URL="apps/gatsby-theme-minimal/gatsby-config.js" ] } }
+    "apps/gatsby-theme-minimal/gatsby-config.js" -> "path" [style="dashed" penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/gatsby-node.js" [label="gatsby-node.js" URL="apps/gatsby-theme-minimal/gatsby-node.js" ] } }
     "apps/gatsby-theme-minimal/gatsby-node.js" -> "node_modules/debug" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/gatsby-ssr.js" [label="gatsby-ssr.js" tooltip="no-orphans" URL="apps/gatsby-theme-minimal/gatsby-ssr.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/postcss.config.js" [label="postcss.config.js" URL="apps/gatsby-theme-minimal/postcss.config.js" ] } }
+    "apps/gatsby-theme-minimal/postcss.config.js" -> "path" [style="dashed" penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" subgraph "cluster_apps/gatsby-theme-minimal/src" {label="src" subgraph "cluster_apps/gatsby-theme-minimal/src/pages" {label="pages" "apps/gatsby-theme-minimal/src/pages/404.js" [label="404.js" URL="apps/gatsby-theme-minimal/src/pages/404.js" ] } } } }
     "apps/gatsby-theme-minimal/src/pages/404.js" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" subgraph "cluster_apps/gatsby-theme-minimal/src" {label="src" subgraph "cluster_apps/gatsby-theme-minimal/src/pages" {label="pages" "apps/gatsby-theme-minimal/src/pages/index.spec.tsx" [label="index.spec.tsx" URL="apps/gatsby-theme-minimal/src/pages/index.spec.tsx" fillcolor="#bbfeff"] } } } }
@@ -21,6 +24,10 @@ strict digraph "dependency-cruiser output"{
     "apps/gatsby-theme-minimal/src/pages/index.tsx" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" subgraph "cluster_apps/gatsby-theme-minimal/src" {label="src" subgraph "cluster_apps/gatsby-theme-minimal/src/pages" {label="pages" "apps/gatsby-theme-minimal/src/pages/logo.svg" [label="logo.svg" URL="apps/gatsby-theme-minimal/src/pages/logo.svg" ] } } } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" subgraph "cluster_apps/gatsby-theme-minimal/src" {label="src" subgraph "cluster_apps/gatsby-theme-minimal/src/pages" {label="pages" "apps/gatsby-theme-minimal/src/pages/star.svg" [label="star.svg" URL="apps/gatsby-theme-minimal/src/pages/star.svg" ] } } } }
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/gatsby-theme-minimal" {label="gatsby-theme-minimal" "apps/gatsby-theme-minimal/tailwind.config.js" [label="tailwind.config.js" URL="apps/gatsby-theme-minimal/tailwind.config.js" ] } }
+    "apps/gatsby-theme-minimal/tailwind.config.js" -> "tailwind-workspace-preset.js"
+    "apps/gatsby-theme-minimal/tailwind.config.js" -> "node_modules/@nrwl" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "apps/gatsby-theme-minimal/tailwind.config.js" -> "path" [style="dashed" penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www-e2e" {label="www-e2e" subgraph "cluster_apps/www-e2e/src" {label="src" subgraph "cluster_apps/www-e2e/src/integration" {label="integration" "apps/www-e2e/src/integration/app.spec.ts" [label="app.spec.ts" URL="apps/www-e2e/src/integration/app.spec.ts" fillcolor="#ddfeff"] } } } }
     "apps/www-e2e/src/integration/app.spec.ts" -> "apps/www-e2e/src/support/app.po.ts"
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www-e2e" {label="www-e2e" subgraph "cluster_apps/www-e2e/src" {label="src" subgraph "cluster_apps/www-e2e/src/support" {label="support" "apps/www-e2e/src/support/app.po.ts" [label="app.po.ts" URL="apps/www-e2e/src/support/app.po.ts" fillcolor="#ddfeff"] } } } }
@@ -32,6 +39,8 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" "apps/www/gatsby-node.js" [label="gatsby-node.js" tooltip="no-orphans" URL="apps/www/gatsby-node.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" "apps/www/gatsby-ssr.js" [label="gatsby-ssr.js" tooltip="no-orphans" URL="apps/www/gatsby-ssr.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" "apps/www/jest.config.js" [label="jest.config.js" tooltip="no-orphans" URL="apps/www/jest.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" "apps/www/postcss.config.js" [label="postcss.config.js" URL="apps/www/postcss.config.js" ] } }
+    "apps/www/postcss.config.js" -> "path" [style="dashed" penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" subgraph "cluster_apps/www/src" {label="src" subgraph "cluster_apps/www/src/pages" {label="pages" "apps/www/src/pages/404.js" [label="404.js" URL="apps/www/src/pages/404.js" ] } } } }
     "apps/www/src/pages/404.js" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" subgraph "cluster_apps/www/src" {label="src" subgraph "cluster_apps/www/src/pages" {label="pages" "apps/www/src/pages/index.spec.tsx" [label="index.spec.tsx" URL="apps/www/src/pages/index.spec.tsx" fillcolor="#bbfeff"] } } } }
@@ -46,6 +55,10 @@ strict digraph "dependency-cruiser output"{
     "apps/www/src/pages/index.tsx" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" subgraph "cluster_apps/www/src" {label="src" subgraph "cluster_apps/www/src/pages" {label="pages" "apps/www/src/pages/logo.svg" [label="logo.svg" URL="apps/www/src/pages/logo.svg" ] } } } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" subgraph "cluster_apps/www/src" {label="src" subgraph "cluster_apps/www/src/pages" {label="pages" "apps/www/src/pages/star.svg" [label="star.svg" URL="apps/www/src/pages/star.svg" ] } } } }
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/www" {label="www" "apps/www/tailwind.config.js" [label="tailwind.config.js" URL="apps/www/tailwind.config.js" ] } }
+    "apps/www/tailwind.config.js" -> "tailwind-workspace-preset.js"
+    "apps/www/tailwind.config.js" -> "node_modules/@nrwl" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "apps/www/tailwind.config.js" -> "path" [style="dashed" penwidth="1.0"]
     "jest.config.js" [label="jest.config.js" URL="jest.config.js" ]
     "jest.config.js" -> "node_modules/@nrwl" [xlabel="not-to-dev-dep" tooltip="not-to-dev-dep" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     "jest.preset.js" [label="jest.preset.js" URL="jest.preset.js" ]
@@ -74,9 +87,6 @@ strict digraph "dependency-cruiser output"{
     "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/callsToAction.ts"
     "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/cms-api.ts"
     "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/constants.ts"
-    "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/corporate.ts"
-    "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/features.ts"
-    "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/resources.ts"
     "libs/catalog/src/index.ts" -> "libs/catalog/src/lib/solutions.ts"
     "libs/catalog/src/index.ts" -> "libs/catalog/src/types.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/callsToAction.ts" [label="callsToAction.ts" URL="libs/catalog/src/lib/callsToAction.ts" fillcolor="#ddfeff"] } } } }
@@ -91,59 +101,42 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" subgraph "cluster_libs/catalog/src/lib/cms-providers" {label="cms-providers" "libs/catalog/src/lib/cms-providers/strapi.ts" [label="strapi.ts" URL="libs/catalog/src/lib/cms-providers/strapi.ts" fillcolor="#ddfeff"] } } } } }
     "libs/catalog/src/lib/cms-providers/strapi.ts" -> "libs/catalog/src/types.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/constants.ts" [label="constants.ts" URL="libs/catalog/src/lib/constants.ts" fillcolor="#ddfeff"] } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/corporate.ts" [label="corporate.ts" URL="libs/catalog/src/lib/corporate.ts" fillcolor="#ddfeff"] } } } }
-    "libs/catalog/src/lib/corporate.ts" -> "libs/catalog/src/types.ts"
-    "libs/catalog/src/lib/corporate.ts" -> "node_modules/@heroicons" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/features.ts" [label="features.ts" URL="libs/catalog/src/lib/features.ts" fillcolor="#ddfeff"] } } } }
-    "libs/catalog/src/lib/features.ts" -> "libs/catalog/src/types.ts"
-    "libs/catalog/src/lib/features.ts" -> "node_modules/@heroicons" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" subgraph "cluster_libs/catalog/src/lib/navigation" {label="navigation" "libs/catalog/src/lib/navigation/primary.ts" [label="primary.ts" tooltip="no-orphans" URL="libs/catalog/src/lib/navigation/primary.ts" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" subgraph "cluster_libs/catalog/src/lib/navigation" {label="navigation" "libs/catalog/src/lib/navigation/social.ts" [label="social.ts" tooltip="no-orphans" URL="libs/catalog/src/lib/navigation/social.ts" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" subgraph "cluster_libs/catalog/src/lib/navigation" {label="navigation" "libs/catalog/src/lib/navigation/user.ts" [label="user.ts" tooltip="no-orphans" URL="libs/catalog/src/lib/navigation/user.ts" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/resources.ts" [label="resources.ts" URL="libs/catalog/src/lib/resources.ts" fillcolor="#ddfeff"] } } } }
-    "libs/catalog/src/lib/resources.ts" -> "libs/catalog/src/types.ts"
-    "libs/catalog/src/lib/resources.ts" -> "node_modules/@heroicons" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" subgraph "cluster_libs/catalog/src/lib" {label="lib" "libs/catalog/src/lib/solutions.ts" [label="solutions.ts" URL="libs/catalog/src/lib/solutions.ts" fillcolor="#ddfeff"] } } } }
     "libs/catalog/src/lib/solutions.ts" -> "libs/catalog/src/types.ts"
     "libs/catalog/src/lib/solutions.ts" -> "node_modules/@heroicons" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/catalog" {label="catalog" subgraph "cluster_libs/catalog/src" {label="src" "libs/catalog/src/types.ts" [label="types.ts" URL="libs/catalog/src/types.ts" fillcolor="#ddfeff"] } } }
     "libs/catalog/src/types.ts" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/gatsby-browser.js" [label="gatsby-browser.js" URL="libs/gatsby/mui-emotion/gatsby-browser.js" ] } } }
-    "libs/gatsby/mui-emotion/gatsby-browser.js" -> "libs/gatsby/mui-emotion/src/getEmotionCache.js"
     "libs/gatsby/mui-emotion/gatsby-browser.js" -> "node_modules/@emotion" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "libs/gatsby/mui-emotion/gatsby-browser.js" -> "libs/utils/src/index.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/gatsby-node.js" [label="gatsby-node.js" tooltip="no-orphans" URL="libs/gatsby/mui-emotion/gatsby-node.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/gatsby-ssr.js" [label="gatsby-ssr.js" URL="libs/gatsby/mui-emotion/gatsby-ssr.js" ] } } }
-    "libs/gatsby/mui-emotion/gatsby-ssr.js" -> "libs/gatsby/mui-emotion/src/getEmotionCache.js"
     "libs/gatsby/mui-emotion/gatsby-ssr.js" -> "node_modules/@emotion" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "libs/gatsby/mui-emotion/gatsby-ssr.js" -> "libs/utils/src/index.ts"
     "libs/gatsby/mui-emotion/gatsby-ssr.js" -> "node_modules/react-dom" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/index.js" [label="index.js" URL="libs/gatsby/mui-emotion/index.js" ] } } }
-    "libs/gatsby/mui-emotion/index.js" -> "libs/gatsby/mui-emotion/src/getEmotionCache.js"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/index.js" [label="index.js" tooltip="no-orphans" URL="libs/gatsby/mui-emotion/index.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" "libs/gatsby/mui-emotion/jest.config.js" [label="jest.config.js" tooltip="no-orphans" URL="libs/gatsby/mui-emotion/jest.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/mui-emotion" {label="mui-emotion" subgraph "cluster_libs/gatsby/mui-emotion/src" {label="src" "libs/gatsby/mui-emotion/src/getEmotionCache.js" [label="getEmotionCache.js" URL="libs/gatsby/mui-emotion/src/getEmotionCache.js" ] } } } }
-    "libs/gatsby/mui-emotion/src/getEmotionCache.js" -> "node_modules/@emotion" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/site-schema" {label="site-schema" "libs/gatsby/site-schema/gatsby-node.js" [label="gatsby-node.js" tooltip="no-orphans" URL="libs/gatsby/site-schema/gatsby-node.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/site-schema" {label="site-schema" "libs/gatsby/site-schema/index.js" [label="index.js" URL="libs/gatsby/site-schema/index.js" ] } } }
-    "libs/gatsby/site-schema/index.js" -> "libs/gatsby/site-schema/src/withDefaultOptions.ts"
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/site-schema" {label="site-schema" "libs/gatsby/site-schema/jest.config.js" [label="jest.config.js" tooltip="no-orphans" URL="libs/gatsby/site-schema/jest.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/site-schema" {label="site-schema" subgraph "cluster_libs/gatsby/site-schema/src" {label="src" "libs/gatsby/site-schema/src/withDefaultOptions.ts" [label="withDefaultOptions.ts" URL="libs/gatsby/site-schema/src/withDefaultOptions.ts" fillcolor="#ddfeff"] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" "libs/gatsby/top-layout/gatsby-browser.js" [label="gatsby-browser.js" URL="libs/gatsby/top-layout/gatsby-browser.js" ] } } }
-    "libs/gatsby/top-layout/gatsby-browser.js" -> "libs/gatsby/top-layout/src/TopLayout.tsx"
+    "libs/gatsby/top-layout/gatsby-browser.js" -> "libs/gatsby/top-layout/src/TopLayout.js"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" "libs/gatsby/top-layout/gatsby-node.js" [label="gatsby-node.js" tooltip="no-orphans" URL="libs/gatsby/top-layout/gatsby-node.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" "libs/gatsby/top-layout/gatsby-ssr.js" [label="gatsby-ssr.js" URL="libs/gatsby/top-layout/gatsby-ssr.js" ] } } }
-    "libs/gatsby/top-layout/gatsby-ssr.js" -> "libs/gatsby/top-layout/src/TopLayout.tsx"
+    "libs/gatsby/top-layout/gatsby-ssr.js" -> "libs/gatsby/top-layout/src/TopLayout.js"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" "libs/gatsby/top-layout/index.js" [label="index.js" URL="libs/gatsby/top-layout/index.js" ] } } }
-    "libs/gatsby/top-layout/index.js" -> "libs/gatsby/top-layout/src/SEO.tsx"
-    "libs/gatsby/top-layout/index.js" -> "libs/gatsby/top-layout/src/TopLayout.tsx"
+    "libs/gatsby/top-layout/index.js" -> "libs/gatsby/top-layout/src/SEO.js"
+    "libs/gatsby/top-layout/index.js" -> "libs/gatsby/top-layout/src/TopLayout.js"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" "libs/gatsby/top-layout/jest.config.js" [label="jest.config.js" tooltip="no-orphans" URL="libs/gatsby/top-layout/jest.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" subgraph "cluster_libs/gatsby/top-layout/src" {label="src" "libs/gatsby/top-layout/src/SEO.tsx" [label="SEO.tsx" URL="libs/gatsby/top-layout/src/SEO.tsx" fillcolor="#bbfeff"] } } } }
-    "libs/gatsby/top-layout/src/SEO.tsx" -> "libs/catalog/src/index.ts"
-    "libs/gatsby/top-layout/src/SEO.tsx" -> "libs/utils/src/index.ts"
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" subgraph "cluster_libs/gatsby/top-layout/src" {label="src" "libs/gatsby/top-layout/src/TopLayout.tsx" [label="TopLayout.tsx" URL="libs/gatsby/top-layout/src/TopLayout.tsx" fillcolor="#bbfeff"] } } } }
-    "libs/gatsby/top-layout/src/TopLayout.tsx" -> "libs/gatsby/top-layout/src/SEO.tsx"
-    "libs/gatsby/top-layout/src/TopLayout.tsx" -> "libs/theme/src/index.ts"
-    "libs/gatsby/top-layout/src/TopLayout.tsx" -> "node_modules/prop-types" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
-    "libs/gatsby/top-layout/src/TopLayout.tsx" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
-    "libs/gatsby/top-layout/src/TopLayout.tsx" -> "node_modules/react-helmet" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" subgraph "cluster_libs/gatsby/top-layout/src" {label="src" "libs/gatsby/top-layout/src/SEO.js" [label="SEO.js" URL="libs/gatsby/top-layout/src/SEO.js" ] } } } }
+    "libs/gatsby/top-layout/src/SEO.js" -> "libs/catalog/src/index.ts"
+    "libs/gatsby/top-layout/src/SEO.js" -> "libs/utils/src/index.ts"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/gatsby" {label="gatsby" subgraph "cluster_libs/gatsby/top-layout" {label="top-layout" subgraph "cluster_libs/gatsby/top-layout/src" {label="src" "libs/gatsby/top-layout/src/TopLayout.js" [label="TopLayout.js" URL="libs/gatsby/top-layout/src/TopLayout.js" ] } } } }
+    "libs/gatsby/top-layout/src/TopLayout.js" -> "libs/gatsby/top-layout/src/SEO.js"
+    "libs/gatsby/top-layout/src/TopLayout.js" -> "libs/theme/src/index.ts"
+    "libs/gatsby/top-layout/src/TopLayout.js" -> "node_modules/prop-types" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "libs/gatsby/top-layout/src/TopLayout.js" -> "node_modules/react" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    "libs/gatsby/top-layout/src/TopLayout.js" -> "node_modules/react-helmet" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/hooks" {label="hooks" "libs/hooks/jest.config.js" [label="jest.config.js" tooltip="no-orphans" URL="libs/hooks/jest.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/hooks" {label="hooks" subgraph "cluster_libs/hooks/src" {label="src" "libs/hooks/src/index.ts" [label="index.ts" URL="libs/hooks/src/index.ts" fillcolor="#ddfeff"] } } }
     "libs/hooks/src/index.ts" -> "libs/hooks/src/use-dark-mode/index.ts"
@@ -202,6 +195,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/utils" {label="utils" subgraph "cluster_libs/utils/src" {label="src" "libs/utils/src/index.ts" [label="index.ts" URL="libs/utils/src/index.ts" fillcolor="#ddfeff"] } } }
     "libs/utils/src/index.ts" -> "libs/utils/src/lib/compareUrl.ts"
     "libs/utils/src/index.ts" -> "libs/utils/src/lib/createEmotionCache.ts"
+    "libs/utils/src/index.ts" -> "libs/utils/src/lib/getEmotionCache.ts"
     "libs/utils/src/index.ts" -> "libs/utils/src/lib/getURL.ts"
     "libs/utils/src/index.ts" -> "libs/utils/src/lib/isActiveRoute.ts"
     "libs/utils/src/index.ts" -> "libs/utils/src/lib/isBrowser.ts"
@@ -214,6 +208,8 @@ strict digraph "dependency-cruiser output"{
     "libs/utils/src/lib/compareUrl.ts" -> "node_modules/url-parse" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/utils" {label="utils" subgraph "cluster_libs/utils/src" {label="src" subgraph "cluster_libs/utils/src/lib" {label="lib" "libs/utils/src/lib/createEmotionCache.ts" [label="createEmotionCache.ts" URL="libs/utils/src/lib/createEmotionCache.ts" fillcolor="#ddfeff"] } } } }
     "libs/utils/src/lib/createEmotionCache.ts" -> "node_modules/@emotion" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/utils" {label="utils" subgraph "cluster_libs/utils/src" {label="src" subgraph "cluster_libs/utils/src/lib" {label="lib" "libs/utils/src/lib/getEmotionCache.ts" [label="getEmotionCache.ts" URL="libs/utils/src/lib/getEmotionCache.ts" fillcolor="#ddfeff"] } } } }
+    "libs/utils/src/lib/getEmotionCache.ts" -> "node_modules/@emotion" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/utils" {label="utils" subgraph "cluster_libs/utils/src" {label="src" subgraph "cluster_libs/utils/src/lib" {label="lib" "libs/utils/src/lib/getURL.ts" [label="getURL.ts" URL="libs/utils/src/lib/getURL.ts" fillcolor="#ddfeff"] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/utils" {label="utils" subgraph "cluster_libs/utils/src" {label="src" subgraph "cluster_libs/utils/src/lib" {label="lib" "libs/utils/src/lib/isActiveRoute.ts" [label="isActiveRoute.ts" URL="libs/utils/src/lib/isActiveRoute.ts" fillcolor="#ddfeff"] } } } }
     "libs/utils/src/lib/isActiveRoute.ts" -> "libs/catalog/src/index.ts"
@@ -228,6 +224,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/@heroicons" [label="@heroicons" URL="node_modules/@heroicons" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/@mui" [label="@mui" URL="node_modules/@mui" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/@nrwl" [label="@nrwl" URL="node_modules/@nrwl" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/@tailwindcss" [label="@tailwindcss" URL="node_modules/@tailwindcss" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/@testing-library" [label="@testing-library" URL="node_modules/@testing-library" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/debug" [label="debug" URL="node_modules/debug" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/gatsby" [label="gatsby" URL="node_modules/gatsby" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
@@ -237,4 +234,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-dom" [label="react-dom" URL="node_modules/react-dom" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-helmet" [label="react-helmet" URL="node_modules/react-helmet" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
     subgraph "cluster_node_modules" {label="node_modules" "node_modules/url-parse" [label="url-parse" URL="node_modules/url-parse" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    "path" [label="path" color="grey" fontcolor="grey"]
+    "tailwind-workspace-preset.js" [label="tailwind-workspace-preset.js" URL="tailwind-workspace-preset.js" ]
+    "tailwind-workspace-preset.js" -> "node_modules/@tailwindcss" [xlabel="not-to-dev-dep" tooltip="not-to-dev-dep" penwidth="1.0" fontcolor="#4e7f9d" color="#4e7f9d"]
 }

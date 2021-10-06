@@ -1,4 +1,5 @@
 export * from "./lib/compareUrl"
+export * from "./lib/getEmotionCache"
 export * from "./lib/isBrowser"
 export * from "./lib/isActiveRoute"
 export * from "./lib/primitive-types"

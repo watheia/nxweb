@@ -1,14 +1,13 @@
 {
   "version": 2,
   "projects": {
+    "atoms": "libs/atoms",
     "catalog": "libs/catalog",
     "env-gatsby-mui-emotion": "libs/gatsby/mui-emotion",
-    "env-gatsby-site-schema": "libs/gatsby/site-schema",
     "env-gatsby-top-layout": "libs/gatsby/top-layout",
     "gatsby-theme-minimal": "apps/gatsby-theme-minimal",
-    "theme": "libs/theme",
-    "atoms": "libs/atoms",
     "hooks": "libs/hooks",
+    "theme": "libs/theme",
     "utils": "libs/utils",
     "www": {
       "root": "apps/www",

@@ -15,7 +15,13 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "stylelint"
+        ],
         "accessToken": "N2VmYWRkNDgtNWFjOC00MjVjLTg2YTItY2MzNzgyZDFjYzZmfHJlYWQtd3JpdGU="
       }
     }
@@ -31,11 +37,15 @@
   "projects": {
     "www": {
       "tags": [],
-      "implicitDependencies": ["gatsby-theme-minimal"]
+      "implicitDependencies": [
+        "gatsby-theme-minimal"
+      ]
     },
     "www-e2e": {
       "tags": [],
-      "implicitDependencies": ["www"]
+      "implicitDependencies": [
+        "www"
+      ]
     }
   }
 }
